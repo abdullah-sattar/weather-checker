@@ -1,0 +1,11 @@
+@import "../../assets/styles/typography.scss";
+
+.currentWeather {
+    margin: 10px;
+    >.currentWeather__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

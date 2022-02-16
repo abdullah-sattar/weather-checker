@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import "./Form.scss";
 
-const Form = () => {
+const Form = (props) => {
+  const { handleInput, handleSubmit } = props;
+
   return (
-    <div>Form</div>
-  )
-}
+    <form className="form" onSubmit={handleSubmit}>
+      <input className="form__search" type="text" placeholder="enter city..." onInput={handleInput} />
+      <input className="form__btn" type="submit" value="Search" />
+    </form>
+  );
+};
 
-export default Form
+export default Form;
