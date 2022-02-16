@@ -36,6 +36,11 @@ const App = (props) => {
   //   }
   // };
 
+  const getDate = () => {
+    const date = new Date();
+    return `${date.toDateString()} ${date.toLocaleTimeString()}`;
+  }
+
   useEffect(() => {
     if (initialRender) {
       if (searchterm.length !== 0) {
@@ -45,7 +50,7 @@ const App = (props) => {
           .then((response) => response.json())
           .then((forecast) => {
             setWeather({
-              date: "15/02/2022",
+              date: getDate(),
               condition: forecast.current.condition.text,
               icon: forecast.current.condition.icon,
               temp: forecast.current.temp_c,
