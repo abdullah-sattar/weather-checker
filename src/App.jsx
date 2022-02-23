@@ -4,7 +4,7 @@ import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import Form from "./components/Form/Form";
 import History from "./components/History/History";
 
-const App = (props) => {
+const App = () => {
   const [term, setTerm] = useState("");
   const [searchterm, setSearchterm] = useState("");
   const [initialRender, setInitialRender] = useState(false);
