@@ -19,23 +19,6 @@ const App = () => {
     isDay: "",
   });
 
-  // const postRequest = () => {
-  //   console.log("hello there");
-  //   console.log(forecast);
-  //   if (forecast) {
-  //     fetch("http://localhost:8080/add-forecast", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(forecast),
-  //     })
-  //       .then((response) => response.json())
-  //       .then((json) => console.log(json))
-  //       .catch((err) => console.log(err));
-  //   }
-  // };
-
   const getDate = () => {
     const date = new Date();
     return `${date.toDateString()} ${date.toLocaleTimeString()}`;
@@ -60,18 +43,6 @@ const App = () => {
             });
             setDisplay(true);
           });
-        // console.log("hello there");
-        // console.log(weather);
-        // fetch("http://localhost:8080/add-forecast", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify(weather),
-        // })
-        //   .then((response) => response.json())
-        //   .then((json) => console.log(json))
-        //   .catch((err) => console.log(err));
       }
     }
     setInitialRender(false);
@@ -99,5 +70,3 @@ const App = () => {
 };
 
 export default App;
-// setTimeout(postRequest(), 1000);
-// weather, setWeather, searchterm, forecast
