@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Poppins&display=swap");
+* {
+  font-family: "Mukta", sans-serif;
+}
+
+.currentWeather {
+  margin: 10px;
+  margin-top: 3rem;
+}
+.currentWeather > .currentWeather__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

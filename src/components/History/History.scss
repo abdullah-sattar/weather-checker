@@ -1,8 +1,12 @@
 @import "../../assets/styles/typography.scss";
 
-.card-container {
+.history {
+  margin-top: 5rem;
+
+  &__card-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+  }
 }

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Poppins&display=swap");
+* {
+  font-family: "Mukta", sans-serif;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.form > .form__search {
+  border-radius: 10px;
+  padding: 5px;
+  width: 8rem;
+}
+.form > .form__btn {
+  border-radius: 1rem;
+  background-color: #acdda0;
+  color: black;
+  cursor: pointer;
+  width: 4rem;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .form > .form__search {
+    width: 15rem;
+  }
+  .form > .form__btn {
+    padding: 5px;
+    width: 8rem;
+    font-size: large;
+  }
+}

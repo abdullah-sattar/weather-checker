@@ -41,10 +41,12 @@ const History = (props) => {
     );
   });
 
-  return <div className="card-container">
-    <h2>Previous searches for {weather.name}</h2>
-    {weatherCardJSX}
-    </div>;
+  return (
+    <div className="history">
+      <h1>Previous searches for {weather.name}</h1>
+      <div className="history__card-container">{weatherCardJSX}</div>
+    </div>
+  );
 };
 
 export default History;
